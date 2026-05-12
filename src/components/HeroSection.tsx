@@ -53,9 +53,8 @@ const HeroSection = () => {
           </a>
           <a href="#products">
             <Button
-              variant="outline"
               size="lg"
-              className="border-cream/30 text-cream hover:bg-cream/10 font-semibold text-base px-8 py-6"
+              className="bg-gradient-gold text-secondary font-semibold text-base px-8 py-6 shadow-lg hover:shadow-elevated hover:opacity-95"
             >
               Explore Our Products
               <ArrowRight className="h-5 w-5 ml-2" />

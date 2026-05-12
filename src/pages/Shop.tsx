@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowLeft, ShoppingBag, Eye, ShieldCheck, Truck, Leaf } from "lucide-react";
+import { ShoppingBag, Eye, ShieldCheck, Truck, Leaf } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -23,12 +23,6 @@ const Shop = () => {
       {/* Hero */}
       <section className="bg-gradient-to-b from-secondary to-secondary/95 pt-32 pb-16 text-center text-primary-foreground">
         <div className="section-container">
-          <a
-            href="/"
-            className="inline-flex items-center gap-1.5 text-primary-foreground/70 hover:text-primary text-sm mb-6"
-          >
-            <ArrowLeft className="h-4 w-4" /> Back to home
-          </a>
           <span className="text-primary font-body text-sm tracking-[0.3em] uppercase">
             Marketplace
           </span>

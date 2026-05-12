@@ -1,12 +1,10 @@
 import productBlackStudio from "@/assets/product-black-studio.png";
-import productBlackOriginal from "@/assets/product-black-mustard-1l.png";
 import productBlackLabel from "@/assets/product-black-label.png";
 import productYellowStudio from "@/assets/product-yellow-studio.png";
-import productYellowOriginal from "@/assets/product-yellow-mustard-1l.png";
 import productYellowReal from "@/assets/product-yellow-real.png";
 import productDuoReal from "@/assets/product-duo-real.png";
 
-export const WHATSAPP_NUMBER = "919648799434"; // +91 96487 99434
+export const WHATSAPP_NUMBER = "919648793434"; // +91 96487 93434
 
 export type Product = {
   id: string;
@@ -33,12 +31,11 @@ export const products: Product[] = [
     image: productBlackStudio,
     images: [
       productBlackStudio,
-      productBlackOriginal,
       productBlackLabel,
       productDuoReal,
     ],
     size: "1 Litre",
-    price: "₹260",
+    price: "₹220",
     tag: "Best Seller",
     highlights: [
       "100% pure & unrefined",
@@ -64,7 +61,6 @@ export const products: Product[] = [
     image: productYellowStudio,
     images: [
       productYellowStudio,
-      productYellowOriginal,
       productYellowReal,
       productDuoReal,
     ],
