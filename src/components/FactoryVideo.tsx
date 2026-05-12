@@ -6,7 +6,7 @@ const FactoryVideo = () => {
   const [hasError, setHasError] = useState(false);
 
   // Replace YOUR_CLOUD_NAME with your actual cloud name
-  const videoUrl = "https://res.cloudinary.com/YOUR_CLOUD_NAME/video/upload/q_auto,f_auto/factory";
+    const videoUrl = "https://res.cloudinary.com/dwzqh0lpl/video/upload/v1778611382/factory_1_ciea2u.mp4";
 
   return (
     <section id="factory" className="section-spacing bg-background">
