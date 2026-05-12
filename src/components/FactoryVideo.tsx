@@ -1,12 +1,21 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { Volume2, VolumeX } from "lucide-react";
 import bottlesDuo from "@/assets/viora-bottles-duo.png";
 
 const FactoryVideo = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
+  const [muted, setMuted] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
-  // Replace YOUR_CLOUD_NAME with your actual cloud name
     const videoUrl = "https://res.cloudinary.com/dwzqh0lpl/video/upload/v1778611382/factory_1_ciea2u.mp4";
+
+  const toggleMute = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = !muted;
+      setMuted(!muted);
+    }
+  };
 
   return (
     <section id="factory" className="section-spacing bg-background">
@@ -28,6 +37,7 @@ const FactoryVideo = () => {
           <div className="relative aspect-video bg-secondary">
             {!hasError ? (
               <video
+                ref={videoRef}
                 src={videoUrl}
                 autoPlay
                 muted
@@ -50,6 +60,27 @@ const FactoryVideo = () => {
               <div className="absolute inset-0 bg-secondary/50 flex items-center justify-center">
                 <div className="w-8 h-8 border-4 border-primary/20 border-t-primary rounded-full animate-spin" />
               </div>
+            )}
+
+            {/* Mute/Unmute button */}
+            {!hasError && (
+              <button
+                onClick={toggleMute}
+                className="absolute bottom-4 right-4 flex items-center gap-2 bg-black/50 hover:bg-black/70 text-white text-xs font-body font-semibold px-3 py-2 rounded-full backdrop-blur-sm transition-all"
+                aria-label={muted ? "Unmute video" : "Mute video"}
+              >
+                {muted ? (
+                  <>
+                    <VolumeX className="h-4 w-4" />
+                    <span>Tap for sound</span>
+                  </>
+                ) : (
+                  <>
+                    <Volume2 className="h-4 w-4" />
+                    <span>Mute</span>
+                  </>
+                )}
+              </button>
             )}
           </div>
         </div>

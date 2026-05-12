@@ -31,7 +31,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-secondary-foreground mb-4">Quick Links</h4>
             <ul className="space-y-2 font-body text-sm text-secondary-foreground/70">
-              <li><a href="#" className="hover:text-primary transition-colors">Home</a></li>
+              <li><a href="/" className="hover:text-primary transition-colors">Home</a></li>
               <li><a href="#products" className="hover:text-primary transition-colors">Products</a></li>
               <li><a href="#process" className="hover:text-primary transition-colors">Our Process</a></li>
               <li><a href="#about" className="hover:text-primary transition-colors">About Us</a></li>
@@ -43,10 +43,10 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-lg font-semibold text-secondary-foreground mb-4">Policies</h4>
             <ul className="space-y-2 font-body text-sm text-secondary-foreground/70">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Refund Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms & Conditions</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Shipping Policy</a></li>
+              <li><a href="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+              <li><a href="/refund-policy" className="hover:text-primary transition-colors">Refund Policy</a></li>
+              <li><a href="/terms" className="hover:text-primary transition-colors">Terms & Conditions</a></li>
+              <li><a href="/shipping-policy" className="hover:text-primary transition-colors">Shipping Policy</a></li>
             </ul>
           </div>
 

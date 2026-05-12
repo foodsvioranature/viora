@@ -55,7 +55,7 @@ const Header = () => {
         {/* CTA */}
         <div className="flex items-center gap-3">
           <a href="/shop">
-            <Button variant="default" size="sm" className="bg-gradient-gold text-secondary font-semibold hover:opacity-90 transition-opacity hidden sm:flex items-center gap-2">
+            <Button variant="default" size="sm" className="bg-gradient-gold text-secondary font-semibold hover:opacity-90 transition-opacity hidden sm:flex items-center gap-2 rounded-lg">
               <ShoppingBag className="h-4 w-4" />
               Enter Marketplace
             </Button>
@@ -86,7 +86,7 @@ const Header = () => {
               </a>
             ))}
             <a href="/shop" onClick={() => setMenuOpen(false)}>
-              <Button variant="default" className="bg-gradient-gold text-secondary font-semibold w-full mt-2">
+              <Button variant="default" className="bg-gradient-gold text-secondary font-semibold w-full mt-2 rounded-lg">
                 <ShoppingBag className="h-4 w-4 mr-2" />
                 Enter Marketplace
               </Button>
