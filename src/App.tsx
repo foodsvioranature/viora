@@ -2,6 +2,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index";
 import Shop from "./pages/Shop";
+import AboutUs from "./pages/AboutUs";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -29,6 +30,7 @@ const App = () => {
     const path = window.location.pathname || "/";
     if (path === "/") return <Index />;
     if (path === "/shop") return <Shop />;
+    if (path === "/about") return <AboutUs />;
     if (path === "/privacy-policy") return <ComingSoon title="Privacy Policy" />;
     if (path === "/refund-policy") return <ComingSoon title="Refund Policy" />;
     if (path === "/terms") return <ComingSoon title="Terms & Conditions" />;

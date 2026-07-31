@@ -35,7 +35,7 @@ export const products: Product[] = [
       productDuoReal,
     ],
     size: "1 Litre",
-    price: "₹220",
+    price: "₹250",
     tag: "Best Seller",
     highlights: [
       "100% pure & unrefined",
@@ -65,7 +65,7 @@ export const products: Product[] = [
       productDuoReal,
     ],
     size: "1 Litre",
-    price: "₹280",
+    price: "₹320",
     tag: "New Arrival",
     highlights: [
       "100% pure & unrefined",
